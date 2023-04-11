@@ -12,8 +12,8 @@ docs_dir: docs
 site_dir: docs_build
 
 theme:
-  logo: https://iili.io/HkDska2.png
-  favicon: https://iili.io/HkDska2.png
+  logo: docs/assets/logo.png
+  favicon: docs/assets/logo.png
   name: material
   features:
     - navigation.tabs
