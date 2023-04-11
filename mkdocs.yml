@@ -4,7 +4,7 @@ site_author: Charl_iey
 site_url: https://charliey2.github.io/market-plus
 
 repo_name: charliey2/market-plus
-repo_url: https://github.com/charliey/market-plus
+repo_url: https://github.com/charliey2/market-plus
 edit_uri: ""
 
 docs_dir: docs
@@ -19,6 +19,8 @@ theme:
     - navigation.tabs
     #- navigation.instant
     #- navigation.sections
+  font:
+    text: Rubik
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
