@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://charliey2.github.io/market-plus/api/methods/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../../home/examples/">
       
       
         <link rel="next" href="../events/">
@@ -199,6 +199,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -207,8 +223,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
-        Home
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        API
       </a>
     </li>
   
@@ -263,16 +279,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
       
       
       
@@ -281,7 +295,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Home
@@ -306,6 +320,42 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../home/install/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -315,17 +365,17 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
       
-        <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
           API
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_1_2">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           API
         </label>
@@ -572,13 +622,6 @@
       <a href="../events/" class="md-nav__link">
         Events
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -850,7 +893,7 @@
 </tr>
 <tr>
 <td>handler</td>
-<td>(wasPurchase: <a href="https://create.roblox.com/docs/scripting/luau/booleans">boolean</a>) -&gt; ()</td>
+<td>(wasPurchased: <a href="https://create.roblox.com/docs/scripting/luau/booleans">boolean</a>) -&gt; ()</td>
 <td></td>
 </tr>
 </tbody>
@@ -1028,32 +1071,32 @@
 </thead>
 <tbody>
 <tr>
-<td><code>PurchaseId</code></td>
+<td><span style="white-space: nowrap"><code>PurchaseId</code></span></td>
 <td><a href="https://create.roblox.com/docs/scripting/luau/strings">string</a></td>
 <td>A unique identifier for the specific purchase.</td>
 </tr>
 <tr>
-<td><code>PlayerId</code></td>
+<td><span style="white-space: nowrap"><code>PlayerId</code></span></td>
 <td><a href="https://create.roblox.com/docs/scripting/luau/numbers">number</a></td>
 <td>The user ID of the player who made the purchase.</td>
 </tr>
 <tr>
-<td><code>ProductId</code></td>
+<td><span style="white-space: nowrap"><code>ProductId</code></span></td>
 <td><a href="https://create.roblox.com/docs/scripting/luau/numbers">number</a></td>
 <td>The ID of the purchased product.</td>
 </tr>
 <tr>
-<td><code>PlaceIdWherePurchased</code></td>
+<td><span style="white-space: nowrap"><code>PlaceIdWherePurchased</code></span></td>
 <td><a href="https://create.roblox.com/docs/scripting/luau/numbers">number</a></td>
 <td>The place ID in which the purchase was made; not necessarily the same as the current place's ID.</td>
 </tr>
 <tr>
-<td><code>CurrencySpent</code></td>
+<td><span style="white-space: nowrap"><code>CurrencySpent</code></span></td>
 <td><a href="https://create.roblox.com/docs/scripting/luau/numbers">number</a></td>
 <td>The amount of currency spent in the transaction.</td>
 </tr>
 <tr>
-<td><code>CurrencyType</code></td>
+<td><span style="white-space: nowrap"><code>CurrencyType</code></span></td>
 <td><a href="https://create.roblox.com/docs/reference/engine/enums/CurrencyType">CurrencyType</a></td>
 <td>The type of currency spent in the purchase; always <a href="https://create.roblox.com/docs/reference/engine/enums/CurrencyType#Robux">CurrencyType.Robux</a>.</td>
 </tr>
