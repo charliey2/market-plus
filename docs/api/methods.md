@@ -16,7 +16,7 @@
 #### PromptGamePassPurchase
 
 !!! warning
-    PromptGamePassPurchas has a third optional parameter which if provided will run once when the player either completes the purchase or closes out of the prompt. This parameter is only available on the server, is bad practice to process payments on the client anyways.
+    PromptGamePassPurchas has a third optional parameter which if provided will run once when the player either completes the purchase or closes out of the prompt. This parameter is only available on the server, it is bad practice to process payments on the client anyways.
 
 | Parameter | Type | Required |
 | - | - | - |
