@@ -16,13 +16,10 @@ jobs:
           pip install mkdocs mkdocs-material
           pip install pymdown-extensions
       - name: Build site
-        run: |
-          mkdocs build -d ../site
-        working-directory: ./docs
+        run: mkdocs build -d .
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.MAIN_TOKEN }}
-          publish_dir: ./site
+          github_token: ${{ secrets.MAIN_TOKEN }}
+          publish_dir: .
           publish_branch: gh-pages
-          force_orphan: true
