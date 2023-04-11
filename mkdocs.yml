@@ -65,3 +65,6 @@ markdown_extensions:
 nav:
   - Home:
     - Introduction: index.md
+    - API:
+      - Methods: api/methods.md
+      - Events: api/events.md
