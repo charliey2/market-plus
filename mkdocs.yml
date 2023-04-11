@@ -28,7 +28,7 @@ theme:
       primary: deep purple
       accent: deep purple
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -36,7 +36,7 @@ theme:
       primary: deep purple
       accent: deep purple
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-7
         name: Switch to light mode
   highlightjs: true
   hljs_languages:
