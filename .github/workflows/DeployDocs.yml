@@ -1,3 +1,4 @@
+# .github/workflows/mkdocs-deploy.yml
 name: MkDocs Deploy
 on:
   push:
@@ -9,16 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          fetch-depth: 0
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - name: List directory contents
-        run: ls -a
-        working-directory: ${{ github.workspace }}
       - name: Build site
         run: mkdocs build -d ./docs_build
         working-directory: ${{ github.workspace }}
