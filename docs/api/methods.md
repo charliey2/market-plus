@@ -27,8 +27,7 @@ end)
 #### PromptProductPruchase
 {no-change}
 
-???+ note
-    
+??? note
     PromptProductPurchase's third parameter 'equipIfPurchased' currently has no functionality and was most likely and oversight by Roblox.
 
 | Parameter | Type | Required |
