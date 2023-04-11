@@ -61,3 +61,5 @@ markdown_extensions:
 nav:
   - Home:
     - Introduction: index.md
+
+site_dir: ../site
