@@ -22,7 +22,7 @@
 | - | - | - |
 | player | [Player] | ✓ |
 | gamePassId | [number] | ✓ |
-| handler | (wasPurchase: [boolean]) -> () | |
+| handler | (wasPurchased: [boolean]) -> () | |
 
 ##### Usage
 
@@ -122,12 +122,12 @@ MarketPlus:PromptPremiumPurchase(player)
 
 | Value | Type | Note |
 | - | - | - |
-| `PurchaseId` | [string] | A unique identifier for the specific purchase. |
-| `PlayerId` | [number] | The user ID of the player who made the purchase. |
-| `ProductId` | [number] | The ID of the purchased product. |
-| `PlaceIdWherePurchased` | [number] | The place ID in which the purchase was made; not necessarily the same as the current place's ID. |
-| `CurrencySpent` | [number] | The amount of currency spent in the transaction. |
-| `CurrencyType` | [CurrencyType] | The type of currency spent in the purchase; always [CurrencyType.Robux]. |
+| <span style="white-space: nowrap">`PurchaseId`</span> | [string] | A unique identifier for the specific purchase. |
+| <span style="white-space: nowrap">`PlayerId`</span> | [number] | The user ID of the player who made the purchase. |
+| <span style="white-space: nowrap">`ProductId`</span> | [number] | The ID of the purchased product. |
+| <span style="white-space: nowrap">`PlaceIdWherePurchased`</span> | [number] | The place ID in which the purchase was made; not necessarily the same as the current place's ID. |
+| <span style="white-space: nowrap">`CurrencySpent`</span> | [number] | The amount of currency spent in the transaction. |
+| <span style="white-space: nowrap">`CurrencyType`</span> | [CurrencyType] | The type of currency spent in the purchase; always [CurrencyType.Robux]. |
 
 ##### Usage
 

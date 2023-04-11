@@ -29,6 +29,12 @@ const style = `.tag {
 .deprecated {
     background-color: rgb(227, 87, 75);
 }
+.script {
+    background-color: rgb(57, 118, 204);
+}
+.local-script {
+    background-color: rgb(82, 199, 95);
+}
 h4 {
     display: inline;
 }`
@@ -39,7 +45,9 @@ var replaceStuff = [
     ["{no-change}", '<p class="tag no-change">no-change</p>'],
 	["{client-only}", '<p class="tag client-only">client-only</p>'],
 	["{deprecated}", '<p class="tag deprecated">deprecated</p>'],
-	["{unstable}", '<p class="tag unstable">unstable</p>'],
+    ["{unstable}", '<p class="tag unstable">unstable</p>'],
+    ["{script}", '<p class="tag script">Script</p>'],
+    ["{local-script}", '<p class="tag local-script">LocalScript</p>'],
 ];
 
 function replace(element, from, to) {
