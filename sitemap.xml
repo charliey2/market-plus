@@ -5,4 +5,14 @@
          <lastmod>2023-04-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://charliey2.github.io/market-plus/api/events/</loc>
+         <lastmod>2023-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://charliey2.github.io/market-plus/api/methods/</loc>
+         <lastmod>2023-04-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
