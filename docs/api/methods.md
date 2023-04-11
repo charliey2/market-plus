@@ -59,14 +59,14 @@ MarketPlus:PromptProductPurchase(player, 3489239)
 
 ##### Parameters
 
-##### Usage
-
 | Parameter | Type | Required |
 | - | - | - |
 | player | [Player] | ✓ |
 | assetId | [number] | ✓ |
 | equipIfPurchased | [boolean] | |
 | currencyType | [CurrencyType] | |
+
+##### Usage
 
 ```lua
 MarketPlus:PromptAssetPurchase(player, 4378233)
