@@ -8,6 +8,9 @@
 
 #### PromptGamePassPurchase
 
+!!! warning
+    PromptGamePassPurchas has a third optional parameter which if provided will run once when the player either completes the purchase or closes out of the prompt. This parameter is only available on the server, is bad practice to process payments on the client anyways.
+
 | Parameter | Type | Required |
 | - | - | - |
 | player | [Player] | ✓ |
@@ -23,6 +26,9 @@ end)
 
 #### PromptProductPruchase
 {no-change}
+
+???+ note
+    PromptProductPurchase's third parameter 'equipIfPurchased' currently has no functionality and was most likely and oversight by Roblox.
 
 | Parameter | Type | Required |
 | - | - | - |
