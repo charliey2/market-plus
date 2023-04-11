@@ -18,7 +18,7 @@
       
         <link rel="next" href="../events/">
       
-      <link rel="icon" href="https://user-images.githubusercontent.com/51117782/113474423-cefa8900-9467-11eb-8678-d69cbb0b3966.png">
+      <link rel="icon" href="https://github.com/charliey2/market-plus/blob/gh-pages/assets/images/logo.png?raw=true">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
@@ -91,7 +91,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Market+" class="md-header__button md-logo" aria-label="Market+" data-md-component="logo">
       
-  <img src="https://user-images.githubusercontent.com/51117782/104590568-71724f80-5663-11eb-9bc1-344fc2a4193c.png" alt="logo">
+  <img src="https://github.com/charliey2/market-plus/blob/gh-pages/assets/images/logo.png?raw=true" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -237,7 +237,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Market+" class="md-nav__button md-logo" aria-label="Market+" data-md-component="logo">
       
-  <img src="https://user-images.githubusercontent.com/51117782/104590568-71724f80-5663-11eb-9bc1-344fc2a4193c.png" alt="logo">
+  <img src="https://github.com/charliey2/market-plus/blob/gh-pages/assets/images/logo.png?raw=true" alt="logo">
 
     </a>
     Market+
@@ -518,6 +518,10 @@
 <p>Some no-change methods may include a <a href="https://create.roblox.com/docs/reference/engine/enums/CurrencyType">CurrencyType</a> parameter, which has been deprecated by Roblox. It should not be used.</p>
 </div>
 <h4 id="promptgamepasspurchase">PromptGamePassPurchase<a class="headerlink" href="#promptgamepasspurchase" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PromptGamePassPurchas has a third optional parameter which if provided will run once when the player either completes the purchase or closes out of the prompt. This parameter is only available on the server, is bad practice to process payments on the client anyways.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -551,6 +555,8 @@
 </code></pre></div>
 <h4 id="promptproductpruchase">PromptProductPruchase<a class="headerlink" href="#promptproductpruchase" title="Permanent link">&para;</a></h4>
 <p>{no-change}</p>
+<p>???+ note
+    PromptProductPurchase's third parameter 'equipIfPurchased' currently has no functionality and was most likely and oversight by Roblox.</p>
 <table>
 <thead>
 <tr>
