@@ -23,6 +23,9 @@ const style = `.tag {
 .server-only {
     background-color: rgb(89, 140, 206);
 }
+.no-change {
+    background-color: rgb(85, 84, 102);
+}
 .toggleable {
     background-color: rgb(178, 92, 162);
 }
@@ -42,7 +45,8 @@ h4 {
 var replaceStuff = [
 	["{read-only}", '<p class="tag read-only">read-only</p>'],
 	["{static}", '<p class="tag static">static</p>'],
-	["{server-only}", '<p class="tag server-only">server-only</p>'],
+    ["{server-only}", '<p class="tag server-only">server-only</p>'],
+    ["{no-change}", '<p class="tag no-change">no-change</p>'],
 	["{client-only}", '<p class="tag client-only">client-only</p>'],
 	["{deprecated}", '<p class="tag deprecated">deprecated</p>'],
 	["{chainable}", '<p class="tag chainable">chainable</p>'],
