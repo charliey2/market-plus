@@ -12,8 +12,8 @@ docs_dir: docs
 site_dir: docs_build
 
 theme:
-  logo: docs/assets/logo.png
-  favicon: docs/assets/logo.png
+  logo: https://github.com/charliey2/project-assets/blob/main/irisCORE/logo.png?raw=true
+  favicon: https://github.com/charliey2/project-assets/blob/main/irisCORE/logo.png?raw=true
   name: material
   features:
     - navigation.tabs

@@ -1,7 +1,14 @@
 [Player]: https://create.roblox.com/docs/reference/engine/classes/Player
 [number]: https://create.roblox.com/docs/scripting/luau/numbers
 [boolean]: https://create.roblox.com/docs/scripting/luau/booleans
+[table]: https://create.roblox.com/docs/scripting/luau/tables
+[string]: https://create.roblox.com/docs/scripting/luau/strings
 [CurrencyType]: https://create.roblox.com/docs/reference/engine/enums/CurrencyType
+[CurrencyType.Robux]: https://create.roblox.com/docs/reference/engine/enums/CurrencyType#Robux
+[ProductPurchaseDecision]: https://create.roblox.com/docs/reference/engine/enums/ProductPurchaseDecision
+[receiptInfo]: https://charliey2.github.io/market-plus/api/methods#reciptinfo
+
+## User Prompts
 
 !!! tip "Currency Deprecation"
     Some no-change methods may include a [CurrencyType] parameter, which has been deprecated by Roblox. It should not be used.
@@ -17,6 +24,8 @@
 | gamePassId | [number] | ✓ |
 | handler | (wasPurchase: [boolean]) -> () | |
 
+##### Usage
+
 ```lua
 MarketPlus:PromptGamePassPurchase(player, 0, function(wasPurchased: boolean)
     -- an optional server-only parameter, this function runs once when the
@@ -27,8 +36,10 @@ end)
 #### PromptProductPruchase
 {no-change}
 
+##### Parameters
+
 ??? note
-    PromptProductPurchase's third parameter 'equipIfPurchased' currently has no functionality and was most likely and oversight by Roblox.
+    PromptProductPurchase has a third parameter 'equipIfPurchased' which currently has no (known) functionality and was most likely and oversight by Roblox.
 
 | Parameter | Type | Required |
 | - | - | - |
@@ -37,12 +48,18 @@ end)
 | equipIfPurchased | [boolean] | |
 | currencyType | [CurrencyType] | |
 
+##### Usage
+
 ```lua
 MarketPlus:PromptProductPurchase(player, 3489239)
 ```
 
 #### PromptAssetPurchase
 {no-change}
+
+##### Parameters
+
+##### Usage
 
 | Parameter | Type | Required |
 | - | - | - |
@@ -58,10 +75,14 @@ MarketPlus:PromptAssetPurchase(player, 4378233)
 #### PromptBundlePurchase
 {no-change}
 
+##### Parameters
+
 | Parameter | Type | Required |
 | - | - | - |
 | player | [Player] | ✓ |
 | bundleId | [number] | ✓ |
+
+##### Usage
 
 ```lua
 MarketPlus:PromptBundlePurchase(player, 29311233)
@@ -70,10 +91,52 @@ MarketPlus:PromptBundlePurchase(player, 29311233)
 #### PromptPremiumPurchase
 {no-change}
 
+##### Parameters
+
 | Parameter | Type | Required |
 | - | - | - |
 | player | [Player] | ✓ |
 
+##### Usage
+
 ```lua
 MarketPlus:PromptPremiumPurchase(player)
+```
+
+## Other
+
+#### BindHandlerFunctionToProductPurchase 
+{server-only}
+
+!!! tip
+    It is important that you bind all your developer product purchase handlers before prompting users to make purchases, otherwise players may recive purchase errors.
+
+##### Parameters
+
+| Parameter | Type | Required |
+| - | - | - |
+| productId | [number] | ✓ |
+| handler | ([receiptInfo]: [table]) -> ([ProductPurchaseDecision]) | ✓ |
+
+##### reciptInfo
+
+| Value | Type | Note |
+| - | - | - |
+| `PurchaseId` | [string] | A unique identifier for the specific purchase. |
+| `PlayerId` | [number] | The user ID of the player who made the purchase. |
+| `ProductId` | [number] | The ID of the purchased product. |
+| `PlaceIdWherePurchased` | [number] | The place ID in which the purchase was made; not necessarily the same as the current place's ID. |
+| `CurrencySpent` | [number] | The amount of currency spent in the transaction. |
+| `CurrencyType` | [CurrencyType] | The type of currency spent in the purchase; always [CurrencyType.Robux]. |
+
+##### Usage
+
+```lua
+MarketPlus:BindToProductPurchase(productId, function(receiptInfo: table)
+    -- code to run
+
+    -- must return a ProductPurchaseDecision enum
+    return Enum.ProductPurchaseDecision.PurchaseGranted -- or
+    return Enum.ProductPurchaseDecision.NotProcessedYet
+end)
 ```
