@@ -41,12 +41,14 @@ extra_javascript:
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/1ForeverHD/
+    - icon: fontawesome/brands/github
+      link: https://github.com/charliey2/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/ForeverHD_
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCj9QhyYCvhAwiBHA5B88pYg
+      link: https://twitter.com/Charl_iey
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/
+    - icon: fontawesome/solid/link
+      link: https://iriscore.dev
 
 markdown_extensions:
   - admonition
