@@ -78,6 +78,7 @@ local function server_unbindProductPurchase(productId: number) -- "UnbindProduct
 end
 
 marketPlus.BindHandlerToProductPurchase = isServer and server_bindToProductPurchase
+marketPlus.UnbindProductPurchaseHandler = isServer and server_unbindProductPurchase
 
 --
 

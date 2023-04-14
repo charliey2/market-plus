@@ -27,7 +27,7 @@
 ##### Usage
 
 ```lua
-MarketPlus:PromptGamePassPurchase(player, 0, function(wasPurchased: boolean)
+MarketPlus:PromptGamePassPurchase(player, 000000, function(wasPurchased: boolean)
     -- an optional server-only parameter, this function runs once when the
     -- player either closes out the prompt or purchases the item
 end)
@@ -51,7 +51,7 @@ end)
 ##### Usage
 
 ```lua
-MarketPlus:PromptProductPurchase(player, 3489239)
+MarketPlus:PromptProductPurchase(player, 000000)
 ```
 
 #### PromptAssetPurchase
@@ -69,7 +69,7 @@ MarketPlus:PromptProductPurchase(player, 3489239)
 ##### Usage
 
 ```lua
-MarketPlus:PromptAssetPurchase(player, 4378233)
+MarketPlus:PromptAssetPurchase(player, 000000)
 ```
 
 #### PromptBundlePurchase
@@ -85,7 +85,7 @@ MarketPlus:PromptAssetPurchase(player, 4378233)
 ##### Usage
 
 ```lua
-MarketPlus:PromptBundlePurchase(player, 29311233)
+MarketPlus:PromptBundlePurchase(player, 000000)
 ```
 
 #### PromptPremiumPurchase
@@ -135,7 +135,7 @@ MarketPlus:PromptPremiumPurchase(player)
 ##### Usage
 
 ```lua
-MarketPlus:BindToProductPurchase(productId, function(receiptInfo: table)
+MarketPlus:BindToProductPurchase(000000, function(receiptInfo: table)
     -- code to run
 
     -- must return a ProductPurchaseDecision enum
@@ -156,5 +156,5 @@ end)
 ##### Usage
 
 ```lua
-MarketPlus:UnbindProductPurchaseHandler(000)
+MarketPlus:UnbindProductPurchaseHandler(000000)
 ```
