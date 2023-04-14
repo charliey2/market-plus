@@ -105,11 +105,14 @@ MarketPlus:PromptPremiumPurchase(player)
 
 ## Other
 
-#### BindHandlerFunctionToProductPurchase 
+#### BindHandlerToProductPurchase 
 {server-only}
 
 !!! tip
     It is important that you bind all your developer product purchase handlers before prompting users to make purchases, otherwise players may recive purchase errors.
+
+!!! tip
+    When binding functions to a specific productId, only the most recently bound function will run.
 
 ##### Parameters
 
@@ -139,4 +142,19 @@ MarketPlus:BindToProductPurchase(productId, function(receiptInfo: table)
     return Enum.ProductPurchaseDecision.PurchaseGranted -- or
     return Enum.ProductPurchaseDecision.NotProcessedYet
 end)
+```
+
+#### UnbindProductPurchaseHandler
+{server-only}
+
+##### Parameters
+
+| Parameter | Type | Required |
+| - | - | - |
+| productId | [number] | ✓ |
+
+##### Usage
+
+```lua
+MarketPlus:UnbindProductPurchaseHandler(000)
 ```
