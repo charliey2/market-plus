@@ -953,7 +953,7 @@
 </tbody>
 </table>
 <h5 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptGamePassPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">wasPurchased</span><span class="p">:</span> <span class="n">boolean</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptGamePassPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">000000</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">wasPurchased</span><span class="p">:</span> <span class="n">boolean</span><span class="p">)</span>
     <span class="c1">-- an optional server-only parameter, this function runs once when the</span>
     <span class="c1">-- player either closes out the prompt or purchases the item</span>
 <span class="kr">end</span><span class="p">)</span>
@@ -997,7 +997,7 @@
 </tbody>
 </table>
 <h5 id="usage_1">Usage<a class="headerlink" href="#usage_1" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptProductPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">3489239</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptProductPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">000000</span><span class="p">)</span>
 </code></pre></div>
 <h4 id="promptassetpurchase">PromptAssetPurchase<a class="headerlink" href="#promptassetpurchase" title="Permanent link">&para;</a></h4>
 <p>{no-change}</p>
@@ -1034,7 +1034,7 @@
 </tbody>
 </table>
 <h5 id="usage_2">Usage<a class="headerlink" href="#usage_2" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptAssetPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">4378233</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptAssetPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">000000</span><span class="p">)</span>
 </code></pre></div>
 <h4 id="promptbundlepurchase">PromptBundlePurchase<a class="headerlink" href="#promptbundlepurchase" title="Permanent link">&para;</a></h4>
 <p>{no-change}</p>
@@ -1061,7 +1061,7 @@
 </tbody>
 </table>
 <h5 id="usage_3">Usage<a class="headerlink" href="#usage_3" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptBundlePurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">29311233</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptBundlePurchase</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="mi">000000</span><span class="p">)</span>
 </code></pre></div>
 <h4 id="promptpremiumpurchase">PromptPremiumPurchase<a class="headerlink" href="#promptpremiumpurchase" title="Permanent link">&para;</a></h4>
 <p>{no-change}</p>
@@ -1161,7 +1161,7 @@
 </tbody>
 </table>
 <h5 id="usage_5">Usage<a class="headerlink" href="#usage_5" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">BindToProductPurchase</span><span class="p">(</span><span class="n">productId</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">receiptInfo</span><span class="p">:</span> <span class="n">table</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">BindToProductPurchase</span><span class="p">(</span><span class="mi">000000</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">receiptInfo</span><span class="p">:</span> <span class="n">table</span><span class="p">)</span>
     <span class="c1">-- code to run</span>
 
     <span class="c1">-- must return a ProductPurchaseDecision enum</span>
@@ -1189,7 +1189,7 @@
 </tbody>
 </table>
 <h5 id="usage_6">Usage<a class="headerlink" href="#usage_6" title="Permanent link">&para;</a></h5>
-<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">UnbindProductPurchaseHandler</span><span class="p">(</span><span class="mi">000</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">UnbindProductPurchaseHandler</span><span class="p">(</span><span class="mi">000000</span><span class="p">)</span>
 </code></pre></div>
 
 
