@@ -14,6 +14,7 @@ local RunService = game:GetService("RunService")
 
 local Utility = require(script.Utility)
 local GoodSignal = require(script.Signal)
+local Config = require(script.user_config)
 
 local isClient: boolean = RunService:IsClient()
 local isServer: boolean = RunService:IsServer()
