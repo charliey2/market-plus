@@ -566,11 +566,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bindhandlerfunctiontoproductpurchase" class="md-nav__link">
-    BindHandlerFunctionToProductPurchase
+  <a href="#bindhandlertoproductpurchase" class="md-nav__link">
+    BindHandlerToProductPurchase
   </a>
   
-    <nav class="md-nav" aria-label="BindHandlerFunctionToProductPurchase">
+    <nav class="md-nav" aria-label="BindHandlerToProductPurchase">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -589,6 +589,33 @@
         
           <li class="md-nav__item">
   <a href="#usage_5" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbindproductpurchasehandler" class="md-nav__link">
+    UnbindProductPurchaseHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="UnbindProductPurchaseHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage_6" class="md-nav__link">
     Usage
   </a>
   
@@ -807,11 +834,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#bindhandlerfunctiontoproductpurchase" class="md-nav__link">
-    BindHandlerFunctionToProductPurchase
+  <a href="#bindhandlertoproductpurchase" class="md-nav__link">
+    BindHandlerToProductPurchase
   </a>
   
-    <nav class="md-nav" aria-label="BindHandlerFunctionToProductPurchase">
+    <nav class="md-nav" aria-label="BindHandlerToProductPurchase">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -830,6 +857,33 @@
         
           <li class="md-nav__item">
   <a href="#usage_5" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unbindproductpurchasehandler" class="md-nav__link">
+    UnbindProductPurchaseHandler
+  </a>
+  
+    <nav class="md-nav" aria-label="UnbindProductPurchaseHandler">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_5" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage_6" class="md-nav__link">
     Usage
   </a>
   
@@ -1032,11 +1086,15 @@
 <div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">PromptPremiumPurchase</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="other">Other<a class="headerlink" href="#other" title="Permanent link">&para;</a></h2>
-<h4 id="bindhandlerfunctiontoproductpurchase">BindHandlerFunctionToProductPurchase<a class="headerlink" href="#bindhandlerfunctiontoproductpurchase" title="Permanent link">&para;</a></h4>
+<h4 id="bindhandlertoproductpurchase">BindHandlerToProductPurchase<a class="headerlink" href="#bindhandlertoproductpurchase" title="Permanent link">&para;</a></h4>
 <p>{server-only}</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>It is important that you bind all your developer product purchase handlers before prompting users to make purchases, otherwise players may recive purchase errors.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When binding functions to a specific productId, only the most recently bound function will run.</p>
 </div>
 <h5 id="parameters_4">Parameters<a class="headerlink" href="#parameters_4" title="Permanent link">&para;</a></h5>
 <table>
@@ -1110,6 +1168,28 @@
     <span class="kr">return</span> <span class="n">Enum</span><span class="p">.</span><span class="n">ProductPurchaseDecision</span><span class="p">.</span><span class="n">PurchaseGranted</span> <span class="c1">-- or</span>
     <span class="kr">return</span> <span class="n">Enum</span><span class="p">.</span><span class="n">ProductPurchaseDecision</span><span class="p">.</span><span class="n">NotProcessedYet</span>
 <span class="kr">end</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="unbindproductpurchasehandler">UnbindProductPurchaseHandler<a class="headerlink" href="#unbindproductpurchasehandler" title="Permanent link">&para;</a></h4>
+<p>{server-only}</p>
+<h5 id="parameters_5">Parameters<a class="headerlink" href="#parameters_5" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>productId</td>
+<td><a href="https://create.roblox.com/docs/scripting/luau/numbers">number</a></td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<h5 id="usage_6">Usage<a class="headerlink" href="#usage_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><span class="n">MarketPlus</span><span class="p">:</span><span class="n">UnbindProductPurchaseHandler</span><span class="p">(</span><span class="mi">000</span><span class="p">)</span>
 </code></pre></div>
 
 
