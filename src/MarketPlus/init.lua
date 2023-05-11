@@ -81,6 +81,11 @@ end
 marketPlus.BindHandlerToProductPurchase = isServer and server_bindToProductPurchase
 marketPlus.UnbindProductPurchaseHandler = isServer and server_unbindProductPurchase
 
---
+-- shared functions
+local function shared_promptBundlePurchase(self, bundleId: number)
+    return
+end
+
+marketPlus.PromptBundlePurchase = shared_promptBundlePurchase
 
 return marketPlus
